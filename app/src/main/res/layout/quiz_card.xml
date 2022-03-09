@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/inter_card_half_spacing" android:layout_marginBottom="@dimen/inter_card_half_spacing" app:cardBackgroundColor="#7fffffff">
+    <RelativeLayout android:orientation="horizontal" android:padding="@dimen/card_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/quiz_question_text_size" android:id="@+id/quiz_question" android:padding="@dimen/default_margin_padding" android:layout_width="250dp" android:textColor="@color/black" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/main_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginRight="5dp" android:src="@drawable/bg" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

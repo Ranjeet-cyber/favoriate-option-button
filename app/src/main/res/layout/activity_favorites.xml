@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/back" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="51dp">
+        <RelativeLayout android:id="@+id/rv_move" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tv_prv" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentLeft="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_file_copy_24"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tv_next" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_file_copy_24"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinatorLayout" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="30dp" android:layout_below="@+id/rv_move">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/pager" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp"/>
+            <FrameLayout android:id="@+id/attachment_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+           </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:padding="20dp" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                <ImageView android:id="@+id/iv_favlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_file_copy_24"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                <ImageView android:id="@+id/iv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_share_24"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                <ImageView android:id="@+id/iv_addfav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_favorite_border_24"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fab" android:layout_gravity="bottom" android:layout_marginEnd="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/ic_baseline_format_size_24"  app:rippleColor="#ffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+<!--    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="@string/banner_home_footer"/>-->
+</RelativeLayout>
